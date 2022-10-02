@@ -26,5 +26,5 @@ func main() {
 	for i := 0; i < len(cipher1); i++ {
 		ones += bits.OnesCount(uint(cipher1[i] ^ cipher2[i]))
 	}
-	fmt.Printf("%.2f%%\n", float64(ones)/(float64(len(cipher1))*8.0)*100)
+	fmt.Printf("%d, %.2f%%\n", ones, float64(ones)/(float64(len(cipher1))*8.0)*100)
 }
